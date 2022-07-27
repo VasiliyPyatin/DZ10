@@ -18,7 +18,7 @@ PrintArray(pascalTriangle);
 
 TransformationPascalTriangle(pascalTriangle);
 
-Console.WriteLine();
+WriteLine();
 PrintArray(pascalTriangle);
 
 void TransformationPascalTriangle(double[,] array)
@@ -64,8 +64,8 @@ void PrintArray(double[,] array)
       {
           Console.Write($"{array[i, j]} ");
       }
-      else Console.Write("  ");
+      else Write("  ");
     }
-    Console.WriteLine();
+    WriteLine();
   }
 }
