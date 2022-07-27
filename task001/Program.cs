@@ -15,12 +15,12 @@ PrintArray(ar);
 
 int[,] positionSmallElement = new int[1, 2];
 positionSmallElement = FindPositionSmallElement(ar, positionSmallElement);
-Console.Write($"Позиция элемента: \n");
+Write($"Позиция элемента: \n");
 PrintArray(positionSmallElement);
 
 int[,] arrayWithoutLines = new int[ar.GetLength(0) - 1, ar.GetLength(1) - 1];
 DeleteLines(ar, positionSmallElement, arrayWithoutLines);
-Console.WriteLine($"\nПолучившийся массив:");
+WriteLine($"\nПолучившийся массив:");
 PrintArray(arrayWithoutLines);
 
 int[,] GetRandomArray(int row, int column)
@@ -64,7 +64,7 @@ int[,] FindPositionSmallElement(int[,] arrayi, int[,] position)
       }
     }
   }
-  Console.WriteLine($"\nMинимальный элемент: {temp}");
+  WriteLine($"\nMинимальный элемент: {temp}");
   return position;
 }
 
